@@ -18,7 +18,15 @@
 }
 
 html {
+  box-sizing: border-box;
   scroll-padding-top: calc(var(--header) + 0.75rem);
+  overflow-x: clip;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
