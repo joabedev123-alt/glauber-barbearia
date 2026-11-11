@@ -9,3 +9,4 @@ out
 /foto*.jpeg
 /fot07.jpeg
 /video*.mp4
+.env*
