@@ -218,7 +218,7 @@ function LanguageSwitch({
           <span className="sr-only">English</span>
         </span>
       ) : (
-        <a href={`${pathname}?lang=en`} hrefLang="en" lang="en">
+        <a href={`/locale?lang=en&next=${encodeURIComponent(pathname)}`} hrefLang="en" lang="en">
           <UsFlag />
           <span className="sr-only">English</span>
         </a>
@@ -229,7 +229,7 @@ function LanguageSwitch({
           <span className="sr-only">Português</span>
         </span>
       ) : (
-        <a href={`${pathname}?lang=pt`} hrefLang="pt-BR" lang="pt-BR">
+        <a href={`/locale?lang=pt&next=${encodeURIComponent(pathname)}`} hrefLang="pt-BR" lang="pt-BR">
           <BrFlag />
           <span className="sr-only">Português</span>
         </a>
