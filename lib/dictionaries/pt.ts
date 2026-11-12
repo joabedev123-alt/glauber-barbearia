@@ -94,12 +94,12 @@ export const pt: typeof en = {
       text: "Corte, fade, barba, corte infantil ou freestyle. Os preços definidos estão publicados antes de você escrever.",
     },
     {
-      title: "Entre em contato",
-      text: "Fale no WhatsApp ou por mensagem de texto com o serviço, o dia de preferência e a sua localização.",
+      title: "Abra o Booksy",
+      text: "Marque a visita no Booksy. Escolha o serviço e um horário por lá.",
     },
     {
-      title: "Confirme o horário",
-      text: "O Glauber confirma o horário na conversa. Este site não reserva sozinho.",
+      title: "O horário fica marcado",
+      text: "O agendamento acontece no Booksy. Este site não reserva sozinho.",
     },
   ],
 
@@ -209,7 +209,7 @@ export const pt: typeof en = {
   homeFaq: [
     {
       q: "Como faço para agendar?",
-      a: "Fale com o Glauber no WhatsApp ou por mensagem de texto. Inclua o serviço, o dia e o período de preferência e a sua localização em Cape Cod. Ele confirma o horário nessa conversa. Preencher este site não reserva o atendimento.",
+      a: "Agende no Booksy em glauberbarber33.booksy.com/q/. Escolha o serviço e um horário por lá. WhatsApp e mensagem de texto continuam disponíveis para quem prefere escrever.",
     },
     {
       q: "Qual região é atendida?",
@@ -229,7 +229,7 @@ export const pt: typeof en = {
     eyebrow: "Horários",
     title: "Pronto para o",
     accent: "próximo visual?",
-    body: "Escolha um serviço e escreva para o Glauber. O horário é confirmado na conversa. Consulte a disponibilidade.",
+    body: "Abra o Booksy e escolha um horário. WhatsApp e mensagem de texto continuam disponíveis para quem prefere escrever.",
   },
 
   footer: {
@@ -293,7 +293,7 @@ export const pt: typeof en = {
     eyebrow: "Serviços e preços",
     title: "Serviços e",
     accent: "preços.",
-    lede: "Os preços definidos estão em dólares. Corte infantil e freestyle são confirmados no agendamento. Um botão aqui abre uma mensagem. Ele não reserva o horário sozinho.",
+    lede: "Os preços definidos estão em dólares. Corte infantil e freestyle são confirmados no agendamento. O botão de agendamento abre o Booksy.",
     tableCaption: "Cardápio completo em dólares",
     colService: "Serviço",
     colPrice: "Preço",
@@ -326,7 +326,7 @@ export const pt: typeof en = {
       },
       {
         q: "Quando o horário fica confirmado?",
-        a: "Somente depois que o Glauber responde e vocês combinam um horário. O site, inclusive o assistente de agendamento, não confirma a reserva automaticamente.",
+        a: "O horário é marcado no Booksy. Uma mensagem enviada por este site, inclusive o assistente, não reserva o atendimento.",
       },
     ],
   },
@@ -504,14 +504,13 @@ export const pt: typeof en = {
 
   contact: {
     eyebrow: "Contato e agendamento",
-    title: "Escreva para agendar.",
-    accent: "O horário se confirma na conversa.",
-    lede: "Três caminhos para falar com o Glauber. WhatsApp e SMS usam números diferentes. A disponibilidade não aparece como grade semanal — consulte a disponibilidade.",
-    bookingTitle: "Agendamento",
-    bookingBody:
-      "Use o Booksy quando o link de reserva estiver publicado. Até lá, este botão abre o WhatsApp com um recado curto de que você quer um horário.",
+    title: "Agende no Booksy.",
+    accent: "O horário se escolhe no aplicativo.",
+    lede: "O agendamento é feito no Booksy. WhatsApp e mensagem de texto continuam disponíveis para quem prefere escrever. Os dois usam números diferentes.",
+    bookingTitle: "Booksy",
+    bookingBody: "Abra a página de agendamento do Glauber e escolha o serviço e um horário.",
     bookingPending: "O Booksy ainda não está ligado. Por enquanto, o agendamento segue pelo WhatsApp.",
-    whatsappBody: "O número para mensagens de WhatsApp e pedidos de horário.",
+    whatsappBody: "Para uma mensagem, se preferir escrever em vez de agendar no aplicativo.",
     smsBody: "O número para mensagem de texto comum. Não é a linha do WhatsApp.",
     socialTitle: "Redes",
     regionTitle: "Região",
@@ -569,7 +568,7 @@ export const pt: typeof en = {
         title: "Quando você sai deste site",
         paragraphs: [
           "WhatsApp, mensagem de texto, Instagram e Facebook são serviços separados. O botão de WhatsApp usa +1 (774) 560-8013. As mensagens de texto usam +1 (508) 560-7237. Essas empresas, e a operadora no caso do SMS, tratam a mensagem pelos próprios termos e políticas de privacidade.",
-          "Um link do Booksy só aparece se um endereço real de agendamento tiver sido colocado no site. Segui-lo levaria você ao Booksy. Nenhuma página do Booksy fica embutida aqui enquanto esse endereço estiver vazio.",
+          "Os botões de agendamento abrem o Booksy em https://glauberbarber33.booksy.com/q/. O Booksy é um serviço separado e trata o horário pelos próprios termos. A página do Booksy não fica embutida neste site.",
         ],
       },
       {

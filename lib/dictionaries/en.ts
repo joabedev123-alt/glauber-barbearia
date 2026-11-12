@@ -92,12 +92,12 @@ export const en = {
       text: "A haircut, a fade, beard care, a child's cut, or a freestyle. Set prices are listed before you write.",
     },
     {
-      title: "Get in touch",
-      text: "Message on WhatsApp or by text with the service, a day you prefer, and your location.",
+      title: "Open Booksy",
+      text: "Book the visit on Booksy. Pick the service and a time there.",
     },
     {
-      title: "Confirm your appointment",
-      text: "Glauber confirms the time in the conversation. This site does not reserve it on its own.",
+      title: "Your time is set",
+      text: "The appointment is made in Booksy. This website does not hold it on its own.",
     },
   ],
 
@@ -207,7 +207,7 @@ export const en = {
   homeFaq: [
     {
       q: "How do I book?",
-      a: "Message Glauber on WhatsApp or by text. Include the service, the day and time of day you prefer, and your location in Cape Cod. He confirms the time in that conversation. Filling in this website does not hold the appointment.",
+      a: "Book on Booksy at glauberbarber33.booksy.com/q/. Choose the service and a time there. WhatsApp and text remain available if you want to write first.",
     },
     {
       q: "Which area do you cover?",
@@ -227,7 +227,7 @@ export const en = {
     eyebrow: "Appointments",
     title: "Ready for your",
     accent: "next look?",
-    body: "Choose a service and write to Glauber. The time is confirmed in the conversation. Contact for availability.",
+    body: "Open Booksy and choose a time. WhatsApp and text stay available if you want to write first.",
   },
 
   footer: {
@@ -291,7 +291,7 @@ export const en = {
     eyebrow: "Services and pricing",
     title: "Services and",
     accent: "prices.",
-    lede: "Set prices are in US dollars. Children's haircuts and freestyle are confirmed when you book. A button here opens a message. It does not reserve the time by itself.",
+    lede: "Set prices are in US dollars. Children's haircuts and freestyle are confirmed when you book. The booking button opens Booksy.",
     tableCaption: "Full service menu in US dollars",
     colService: "Service",
     colPrice: "Price",
@@ -324,7 +324,7 @@ export const en = {
       },
       {
         q: "When is the appointment confirmed?",
-        a: "Only after Glauber replies and you agree on a time. The website, including the booking assistant, does not confirm a reservation automatically.",
+        a: "The time is booked on Booksy. A message from this website, including the booking assistant, does not reserve it.",
       },
     ],
   },
@@ -502,14 +502,13 @@ export const en = {
 
   contact: {
     eyebrow: "Contact and booking",
-    title: "Write to book.",
-    accent: "The time is confirmed in the chat.",
-    lede: "Three ways to reach Glauber. WhatsApp and text use different numbers. Availability is not listed as a weekly schedule — contact for availability.",
-    bookingTitle: "Booking",
-    bookingBody:
-      "Use Booksy when a booking link is published. Until then, this button opens WhatsApp with a short note that you would like an appointment.",
+    title: "Book on Booksy.",
+    accent: "Choose the time in the app.",
+    lede: "The appointment is made on Booksy. WhatsApp and text stay open if you prefer to write. Those two use different numbers.",
+    bookingTitle: "Booksy",
+    bookingBody: "Open Glauber's booking page and choose the service and a time.",
     bookingPending: "Booksy is not connected yet. Booking goes through WhatsApp in the meantime.",
-    whatsappBody: "The number for WhatsApp messages and appointment requests.",
+    whatsappBody: "For a message, if you would rather write than book in the app.",
     smsBody: "The number for ordinary text messages. It is not the WhatsApp line.",
     socialTitle: "Social",
     regionTitle: "Region",
@@ -567,7 +566,7 @@ export const en = {
         title: "When you leave this site",
         paragraphs: [
           "WhatsApp, text messaging, Instagram, and Facebook are separate services. The WhatsApp button uses +1 (774) 560-8013. Text messages use +1 (508) 560-7237. Those companies, and your phone carrier in the case of a text, handle the message under their own terms and privacy policies.",
-          "A Booksy link is only offered if a real booking address has been added to the site. Following it would take you to Booksy. No Booksy page is embedded here while that address is empty.",
+          "Booking buttons open Booksy at https://glauberbarber33.booksy.com/q/. Booksy is a separate service and handles the appointment under its own terms. The Booksy page is not embedded on this site.",
         ],
       },
       {

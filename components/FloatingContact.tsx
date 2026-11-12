@@ -6,6 +6,9 @@ export function FloatingContact({
   openLabel,
   closeLabel,
   groupLabel,
+  booksyLabel,
+  booksyHref,
+  booksyDetail,
   whatsappLabel,
   smsLabel,
   whatsappHref,
@@ -16,6 +19,9 @@ export function FloatingContact({
   openLabel: string;
   closeLabel: string;
   groupLabel: string;
+  booksyLabel?: string;
+  booksyHref?: string;
+  booksyDetail?: string;
   whatsappLabel: string;
   smsLabel: string;
   whatsappHref: string;
@@ -54,7 +60,21 @@ export function FloatingContact({
       }}
     >
       <div id={panelId} className="float-panel" role="group" aria-label={groupLabel} hidden={!open}>
-        <a ref={firstLinkRef} href={whatsappHref} target="_blank" rel="noopener noreferrer">
+        {booksyHref ? (
+          <a ref={firstLinkRef} href={booksyHref} target="_blank" rel="noopener noreferrer">
+            <i className="bi bi-calendar-check" aria-hidden="true" />
+            <span>
+              <strong>{booksyLabel}</strong>
+              <small>{booksyDetail}</small>
+            </span>
+          </a>
+        ) : null}
+        <a
+          ref={booksyHref ? undefined : firstLinkRef}
+          href={whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="bi bi-whatsapp" aria-hidden="true" />
           <span>
             <strong>{whatsappLabel}</strong>

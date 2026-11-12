@@ -5,7 +5,7 @@ import { TextLink } from "@/components/Links";
 import { getI18n } from "@/lib/i18n";
 import { media } from "@/lib/media";
 import { pageMetadata } from "@/lib/seo";
-import { business, whatsappHref } from "@/lib/site";
+import { business, generalBookingHref } from "@/lib/site";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { locale, t } = await getI18n();
@@ -45,7 +45,7 @@ export default async function KidsPage() {
             ))}
           </div>
           <p className="section-link">
-            <TextLink href={whatsappHref(t.services.kids.book)}>{t.kids.kidsBook}</TextLink>
+            <TextLink href={generalBookingHref(t.services.kids.book)}>{t.kids.kidsBook}</TextLink>
           </p>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default async function KidsPage() {
             ))}
           </div>
           <p className="section-link">
-            <TextLink href={whatsappHref(t.services.freestyle.book)}>{t.kids.freeBook}</TextLink>
+            <TextLink href={generalBookingHref(t.services.freestyle.book)}>{t.kids.freeBook}</TextLink>
           </p>
         </div>
       </section>

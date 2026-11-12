@@ -1,6 +1,6 @@
 import type { Dictionary } from "@/lib/i18n";
 import { formatPrice, services, type ServiceDef } from "@/lib/services";
-import { whatsappHref } from "@/lib/site";
+import { booksyReady, generalBookingHref } from "@/lib/site";
 import { TextLink } from "./Links";
 
 export function PriceTable({
@@ -32,7 +32,9 @@ export function PriceTable({
               <th scope="row">{copy.name}</th>
               <td className="price">{formatPrice(service.price, t.contactForPricing)}</td>
               <td>
-                <TextLink href={whatsappHref(copy.book)}>{t.bookThisService}</TextLink>
+                <TextLink href={generalBookingHref(copy.book)}>
+                  {booksyReady ? t.bookOnBooksy : t.bookThisService}
+                </TextLink>
               </td>
             </tr>
           );

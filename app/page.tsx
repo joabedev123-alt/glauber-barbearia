@@ -6,7 +6,7 @@ import { PhotoStrip } from "@/components/PhotoStrip";
 import { getI18n } from "@/lib/i18n";
 import { media } from "@/lib/media";
 import { featuredServices, formatPrice } from "@/lib/services";
-import { booksyReady, business, generalBookingHref, whatsappHref } from "@/lib/site";
+import { booksyDisplay, booksyReady, booksyUrl, business, generalBookingHref, whatsappHref } from "@/lib/site";
 
 export default async function HomePage() {
   const { locale, t } = await getI18n();
@@ -32,6 +32,11 @@ export default async function HomePage() {
             </GoldLink>
             <TextLink href="/services">{t.exploreServices}</TextLink>
           </div>
+          {booksyReady ? (
+            <a className="booking-url" href={booksyUrl} target="_blank" rel="noopener noreferrer">
+              {booksyDisplay}
+            </a>
+          ) : null}
         </div>
         <div className={`hero-media${media.hero ? " has-photo" : ""}`}>
           {media.hero ? (

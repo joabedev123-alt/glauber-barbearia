@@ -8,7 +8,7 @@ import { PriceTable, serviceRows } from "@/components/PriceTable";
 import { getI18n } from "@/lib/i18n";
 import { media } from "@/lib/media";
 import { pageMetadata } from "@/lib/seo";
-import { business, whatsappHref } from "@/lib/site";
+import { booksyReady, business, generalBookingHref } from "@/lib/site";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { locale, t } = await getI18n();
@@ -89,9 +89,9 @@ export default async function BeardPage() {
         title={t.finalCta.title}
         accent={t.finalCta.accent}
         body={t.beard.ask}
-        href={whatsappHref(t.services["beard-therapy"].book)}
-        label={t.bookThisService}
-        hint={t.opensWhatsapp}
+        href={generalBookingHref(t.services["beard-therapy"].book)}
+        label={booksyReady ? t.bookOnBooksy : t.bookThisService}
+        hint={booksyReady ? t.opensBooksy : t.opensWhatsapp}
       />
     </>
   );

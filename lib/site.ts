@@ -1,6 +1,6 @@
 /**
  * Dados confirmados da Glauber Barbershop.
- * booksyUrl fica vazio até o link real ser informado. Não inventar URL.
+ * booksyUrl é o endereço real de agendamento. Não trocar por outro link.
  * siteUrl fica vazio até o domínio de produção existir (canonical e sitemap absoluto).
  */
 
@@ -16,8 +16,9 @@ export const business = {
   facebook: "https://www.facebook.com/share/1EmnRm4VTF/?mibextid=wwXIfr",
 } as const;
 
-/** Cole aqui a URL https do Booksy quando ela existir. */
-export const booksyUrl = "";
+/** Página de agendamento no Booksy. */
+export const booksyUrl = "https://glauberbarber33.booksy.com/q/";
+export const booksyDisplay = "glauberbarber33.booksy.com/q/";
 
 /** Defina NEXT_PUBLIC_SITE_URL no ambiente de produção, com https e sem barra final. */
 export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "").replace(/\/$/, "");

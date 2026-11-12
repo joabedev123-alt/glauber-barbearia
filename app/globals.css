@@ -228,6 +228,7 @@ a {
 .wordmark {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 0.28rem;
   color: var(--text);
   text-decoration: none;
@@ -251,7 +252,7 @@ a {
 .wordmark img {
   display: block;
   width: auto;
-  height: 2.5rem;
+  height: 2.85rem;
 }
 
 .header-book .book-short {
@@ -484,6 +485,22 @@ a {
 
 .hero-copy .lede {
   margin-bottom: 1.75rem;
+}
+
+.booking-url {
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 0.85rem;
+  color: var(--gold);
+  font-size: 1.05rem;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  overflow-wrap: anywhere;
+}
+
+.booking-url:hover {
+  color: var(--gold-hover);
 }
 
 .hero-actions {
@@ -1216,7 +1233,10 @@ body.nav-open .float {
   .steps,
   .service-row,
   .contact-item,
-  .footer-grid {
+  .footer-grid,
+  .split,
+  .about-grid,
+  .area-home {
     grid-template-columns: 1fr;
   }
 
@@ -1318,10 +1338,31 @@ body.nav-open .float {
     border-bottom: 1px solid var(--line);
   }
 
-  .header-book {
+  .header-book,
+  .mobile-book,
+  .footer-contact .btn {
     padding-inline: 0.85rem;
     font-size: 0.95rem;
+  }
+
+  .header-book {
     white-space: nowrap;
+  }
+
+  .mobile-book,
+  .footer-contact .btn,
+  .prices a {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .prices a {
+    margin-top: 0.35rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .booking-url {
+    font-size: 0.95rem;
   }
 
   .header-book .book-full {
@@ -1333,7 +1374,7 @@ body.nav-open .float {
   }
 
   .wordmark img {
-    height: 2.15rem;
+    height: 2.35rem;
   }
 
   .header-actions {
@@ -1358,6 +1399,20 @@ body.nav-open .float {
   .video-list {
     grid-template-columns: minmax(0, 17.5rem);
     justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .wordmark img {
+    height: 2rem;
+  }
+
+  .header-actions {
+    gap: 0.7rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.95rem, 10vw, 2.3rem);
   }
 }
 

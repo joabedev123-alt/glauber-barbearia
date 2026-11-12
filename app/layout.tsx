@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { getI18n } from "@/lib/i18n";
-import { booksyReady, business, generalBookingHref, siteUrl, whatsappHref } from "@/lib/site";
+import { booksyDisplay, booksyReady, booksyUrl, business, generalBookingHref, siteUrl, whatsappHref } from "@/lib/site";
 
 const sans = Inter({
   subsets: ["latin"],
@@ -71,6 +71,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           openLabel={t.float.open}
           closeLabel={t.float.close}
           groupLabel={t.float.group}
+          booksyLabel="Booksy"
+          booksyHref={booksyReady ? booksyUrl : undefined}
+          booksyDetail={booksyReady ? booksyDisplay : undefined}
           whatsappLabel={t.whatsapp}
           smsLabel={t.sms}
           whatsappHref={whatsappHref(t.generalBookingMessage)}

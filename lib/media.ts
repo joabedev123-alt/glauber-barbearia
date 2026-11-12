@@ -48,11 +48,11 @@ export const media: {
 } = {
   logo: {
     src: "/media/logo.png",
-    width: 214,
-    height: 60,
+    width: 1125,
+    height: 328,
     alt: {
-      en: "Glauber Barbeiro Cape Cod",
-      pt: "Glauber Barbeiro Cape Cod",
+      en: "Glauber Barber",
+      pt: "Glauber Barber",
     },
   },
   hero: {

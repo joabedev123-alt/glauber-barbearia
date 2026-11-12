@@ -5,7 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { getI18n } from "@/lib/i18n";
 import { services } from "@/lib/services";
 import { pageMetadata } from "@/lib/seo";
-import { booksyReady, business, generalBookingHref, whatsappHref } from "@/lib/site";
+import { booksyDisplay, booksyReady, booksyUrl, business, generalBookingHref, whatsappHref } from "@/lib/site";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { locale, t } = await getI18n();
@@ -46,7 +46,13 @@ export default async function ContactPage() {
               <div>
                 <h2>{t.contact.bookingTitle}</h2>
                 <p>{t.contact.bookingBody}</p>
-                {!booksyReady ? <p>{t.contact.bookingPending}</p> : null}
+                {booksyReady ? (
+                  <a className="booking-url" href={booksyUrl} target="_blank" rel="noopener noreferrer">
+                    {booksyDisplay}
+                  </a>
+                ) : (
+                  <p>{t.contact.bookingPending}</p>
+                )}
               </div>
               <GoldLink href={bookingHref} hint={booksyReady ? t.opensBooksy : t.opensWhatsapp}>
                 {booksyReady ? t.bookOnBooksy : t.bookAppointment}

@@ -3,7 +3,7 @@ import { media } from "@/lib/media";
 
 export function Wordmark() {
   return (
-    <Link href="/" className="wordmark" aria-label={media.logo?.alt.en ?? "Glauber Barbershop"}>
+    <Link href="/" className="wordmark" aria-label={media.logo?.alt.en ?? "Glauber Barber"}>
       {media.logo ? (
         <img
           src={media.logo.src}
@@ -14,7 +14,7 @@ export function Wordmark() {
       ) : (
         <>
           <span className="wordmark-name">GLAUBER</span>
-          <span className="wordmark-sub">BARBERSHOP · CAPE COD</span>
+          <span className="wordmark-sub">BARBER</span>
         </>
       )}
     </Link>
